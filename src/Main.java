@@ -26,11 +26,11 @@ public class Main {
         // 2. Tamaño total
         System.out.println("\nTamaño total de root: " + root.getSize() + " KB");
 
-        // --- El caso del enunciado ---
+        // El caso de estudio
         IStorageUnit s = new File("foto.jpg", 100);
         // s.addStorageUnit(new File("otra.jpg", 50));
-        // ^ NO COMPILA: "cannot find symbol: method addStorageUnit(File)".
-        // El error se detecta en compilación, no en ejecución.
+        // No complia "cannot find symbol: method addStorageUnit(File)"
+        // El error se detecta en compilación, no en ejecución
 
         // Si un cliente solo tiene un StorageUnit y quiere agregar, debe preguntar:
         if (s instanceof IContainer c) {
